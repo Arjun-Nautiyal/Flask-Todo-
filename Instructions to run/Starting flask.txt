@@ -1,0 +1,9 @@
+PS C:\Users\LENOVO\Desktop\Flask> Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+>> .\env\Scripts\Activate.ps1
+
+
+(env) PS C:\Users\LENOVO\Desktop\Flask> .\env\Scripts\activate
+
+
+
+(env) PS C:\Users\LENOVO\Desktop\Flask> python app.py
