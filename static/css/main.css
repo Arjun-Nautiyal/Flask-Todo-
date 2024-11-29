@@ -1,4 +1,4 @@
-body, html {
+/* body, html {
     margin: 0;
     font-family: sans-serif;
     background-color:lightblue;
@@ -33,4 +33,136 @@ td {
 
 #content {
     width: 70%;
+} */
+
+
+
+
+
+/* Moving background with hue rotation and gradient transition */
+/* Moving background with purple, pink, and violet gradients */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    height: 100%;
+    overflow: hidden;
+    background: linear-gradient(-45deg, #8A2BE2, #DA70D6, #FF69B4, #BA55D3);
+    background-size: 400% 400%;
+    animation: gradientMove 12s ease infinite;
+}
+
+/* Gradient movement */
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Content container */
+.content {
+    margin: 50px auto;
+    padding: 20px;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+/* Table styles */
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    background-color: #fafafa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    border: none;
+    text-align: center;
+    padding: 12px;
+}
+
+th {
+    background-color: #8A2BE2;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+td {
+    font-size: 13px;
+    color: #555;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #e6e6fa;
+}
+
+/* Rounded corners for table rows */
+table tr:first-child th:first-child {
+    border-top-left-radius: 10px;
+}
+
+table tr:first-child th:last-child {
+    border-top-right-radius: 10px;
+}
+
+table tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+table tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+/* Form styles */
+.form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #8A2BE2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+button:hover {
+    background-color: #6A0DAD;
+}
+
+/* Responsive content width */
+#content {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
 }
